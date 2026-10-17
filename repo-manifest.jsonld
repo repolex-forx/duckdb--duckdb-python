@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/duckdb/duckdb-python/commit/6d67c23ddb01f54c30aade3ac1bd11ae4cf90703",
       "git:hexsha": "6d67c23ddb01f54c30aade3ac1bd11ae4cf90703",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-10-17T00:33:13.565230+00:00"
     },
     {
       "@id": "https://repolex.ai/r/duckdb/duckdb-python/commit/057c560d257e59b6f51c8fa5cdd34f61c91e4226",
