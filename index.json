@@ -1,0 +1,11 @@
+{
+  "org": "duckdb",
+  "repo": "duckdb-python",
+  "versions": [
+    {
+      "commit": "6d67c23ddb01f54c30aade3ac1bd11ae4cf90703",
+      "tag": "",
+      "parsed_at": "2026-10-17T00:33:13.565894+00:00"
+    }
+  ]
+}
