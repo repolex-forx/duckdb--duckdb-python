@@ -1,0 +1,157 @@
+[2026-11-22T03:22:03Z] === ENRICH ITERATION 1 START | repo=duckdb/duckdb-python sha=b54a4925 ===
+[2026-11-22T03:22:03Z] [iter=1] PHASE START: enrich repo=duckdb/duckdb-python sha=b54a4925 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b54a4925-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b54a49257c50e1a0fd9051f3e1ca7ce157aed4da.nq.gz
+[2026-11-22T03:22:10Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T03:22:51Z] [iter=1] AST store loaded triples=3138463 load_secs=40 mem_mb=942 MB
+[2026-11-22T03:22:51Z] [iter=1] Step 2: Finding LSP targets mem_mb=942 MB
+[2026-11-22T03:22:58Z] [iter=1] LSP targets found call_sites=27704 imports=1698 extends=243 implements=0 secs=8
+[2026-11-22T03:23:04Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=942 MB
+[2026-11-22T03:23:18Z] [iter=1] Position index built positions=201916 nodes_with_types=270151 secs=14 mem_mb=942 MB
+[2026-11-22T03:23:18Z] [iter=1] Step 3: Starting LSP resolution mem_mb=942 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T03:23:18Z] [iter=1] Resolving target type target_type=call_site count=27704
+[2026-11-22T03:23:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=0 resolved=0 errors=0 current=tests/fast/spark/test_spark_types.py
+[2026-11-22T03:25:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.2 files_done=1 resolved=110 errors=0 current=tests/fast/test_tf.py
+[2026-11-22T03:27:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.7 files_done=3 resolved=273 errors=0 current=tests/fast/test_expression_implicit_conversion.py
+[2026-11-22T03:28:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=4 resolved=320 errors=0 current=tests/fast/udf/test_scalar_arrow.py
+[2026-11-22T03:29:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.4 files_done=5 resolved=398 errors=0 current=tests/fast/spark/test_spark_functions_numeric.py
+[2026-11-22T03:31:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=6 resolved=517 errors=0 current=tests/fast/spark/test_spark_session.py
+[2026-11-22T03:35:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.5 files_done=8 resolved=804 errors=0 current=tests/fast/api/test_dbapi11.py
+[2026-11-22T03:37:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.6 files_done=10 resolved=1036 errors=0 current=tests/fast/arrow/test_dataset.py
+[2026-11-22T03:39:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.2 files_done=12 resolved=1151 errors=0 current=tests/fast/api/test_read_csv.py
+[2026-11-22T03:41:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.2 files_done=13 resolved=1315 errors=0 current=tests/fast/types/test_object_int.py
+[2026-11-22T03:49:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.4 files_done=15 resolved=1847 errors=0 current=tests/fast/spark/test_spark_functions_string.py
+[2026-11-22T03:52:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.8 files_done=16 resolved=2047 errors=0 current=tests/fast/test_expression.py
+[2026-11-22T04:00:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.2 files_done=17 resolved=2509 errors=0 current=tests/fast/arrow/test_arrow_stream_scan.py
+[2026-11-22T04:00:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.8 files_done=18 resolved=2561 errors=0 current=tests/fast/arrow/test_arrow_offsets.py
+[2026-11-22T04:01:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.9 files_done=19 resolved=2673 errors=0 current=tests/fast/arrow/test_arrow_list.py
+[2026-11-22T04:03:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.5 files_done=21 resolved=2801 errors=0 current=tests/fast/arrow/test_filter_pushdown.py
+[2026-11-22T04:05:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.2 files_done=22 resolved=2914 errors=0 current=tests/fast/pandas/test_timestamp.py
+[2026-11-22T04:05:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.8 files_done=25 resolved=2962 errors=0 current=tests/fast/pandas/test_fetch_df_chunk.py
+[2026-11-22T04:07:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.9 files_done=27 resolved=3094 errors=0 current=tests/fast/test_replacement_scan.py
+[2026-11-22T04:09:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.2 files_done=28 resolved=3188 errors=0 current=tests/fast/spark/test_spark_functions_array.py
+[2026-11-22T04:11:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.4 files_done=29 resolved=3318 errors=0 current=duckdb/polars_io.py
+[2026-11-22T04:13:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.5 files_done=31 resolved=3557 errors=0 current=tests/fast/arrow/test_arrow_types.py
+[2026-11-22T04:14:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.0 files_done=33 resolved=3593 errors=0 current=tests/fast/arrow/test_2426.py
+[2026-11-22T04:16:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.2 files_done=35 resolved=3832 errors=0 current=tests/fast/relational_api/test_rapi_windows.py
+[2026-11-22T04:16:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.7 files_done=37 resolved=4079 errors=0 current=tests/fast/arrow/test_arrow_binary_view.py
+[2026-11-22T04:17:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.4 files_done=40 resolved=4134 errors=0 current=tests/fast/pandas/test_df_analyze.py
+[2026-11-22T04:20:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.2 files_done=42 resolved=4325 errors=0 current=tests/fast/api/test_to_csv.py
+[2026-11-22T04:22:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.5 files_done=43 resolved=4552 errors=0 current=tests/fast/relational_api/test_rapi_description.py
+[2026-11-22T04:23:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.2 files_done=45 resolved=4632 errors=0 current=tests/fast/test_type.py
+[2026-11-22T04:24:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.0 files_done=46 resolved=4742 errors=0 current=scripts/generate_connection_stubs.py
+[2026-11-22T04:27:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.6 files_done=48 resolved=4995 errors=0 current=tests/fast/test_transaction.py
+[2026-11-22T04:28:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.3 files_done=51 resolved=5043 errors=0 current=tests/fast/arrow/test_buffer_size_option.py
+[2026-11-22T04:29:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.8 files_done=54 resolved=5147 errors=0 current=tests/fast/pandas/test_timedelta.py
+[2026-11-22T04:30:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.3 files_done=58 resolved=5466 errors=0 current=tests/fast/api/test_dbapi_fetch.py
+[2026-11-22T04:30:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.8 files_done=59 resolved=5501 errors=0 current=tests/fast/pandas/test_limit.py
+[2026-11-22T04:31:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.8 files_done=61 resolved=5569 errors=0 current=duckdb/experimental/spark/sql/column.py
+[2026-11-22T04:33:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.0 files_done=62 resolved=5661 errors=0 current=tests/fast/api/test_duckdb_query.py
+[2026-11-22T04:33:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.7 files_done=63 resolved=5709 errors=0 current=tests/fast/arrow/test_arrow_version_format.py
+[2026-11-22T04:34:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.4 files_done=64 resolved=5763 errors=0 current=tests/fast/pandas/test_pandas_na.py
+[2026-11-22T04:35:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.2 files_done=66 resolved=5837 errors=0 current=tests/fast/api/test_dbapi08.py
+[2026-11-22T04:35:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.8 files_done=68 resolved=5908 errors=0 current=tests/fast/pandas/test_datetime_time.py
+[2026-11-22T04:36:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.5 files_done=70 resolved=5948 errors=0 current=tests/fast/types/test_time_ns.py
+[2026-11-22T04:37:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.5 files_done=72 resolved=6019 errors=0 current=tests/fast/udf/test_remove_function.py
+[2026-11-22T04:38:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.0 files_done=74 resolved=6051 errors=0 current=tests/fast/test_all_types.py
+[2026-11-22T04:38:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.9 files_done=75 resolved=6185 errors=0 current=tests/fast/spark/test_spark_functions_date.py
+[2026-11-22T04:40:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.7 files_done=76 resolved=6287 errors=0 current=tests/fast/api/test_duckdb_execute.py
+[2026-11-22T04:41:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.8 files_done=80 resolved=6397 errors=0 current=duckdb/query_graph/__main__.py
+[2026-11-22T04:42:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.4 files_done=81 resolved=6486 errors=0 current=tests/fast/test_sql_expression.py
+[2026-11-22T04:43:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.0 files_done=82 resolved=6519 errors=0 current=tests/fast/adbc/test_adbc.py
+[2026-11-22T04:44:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.4 files_done=84 resolved=6633 errors=0 current=tests/fast/arrow/test_arrow_batch_index.py
+[2026-11-22T04:45:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.8 files_done=87 resolved=6724 errors=0 current=tests/fast/spark/test_spark_join.py
+[2026-11-22T04:46:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.7 files_done=88 resolved=6793 errors=0 current=tests/fast/test_value.py
+[2026-11-22T04:47:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.6 files_done=89 resolved=6844 errors=0 current=scripts/generate_connection_methods.py
+[2026-11-22T04:48:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.3 files_done=92 resolved=6949 errors=0 current=tests/fast/arrow/test_arrow_scanner.py
+[2026-11-22T04:49:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.0 files_done=94 resolved=6999 errors=0 current=tests/fast/test_insert.py
+[2026-11-22T04:49:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.6 files_done=96 resolved=7041 errors=0 current=tests/fast/udf/test_null_filtering.py
+[2026-11-22T04:50:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.3 files_done=97 resolved=7108 errors=0 current=tests/fast/pandas/test_datetime_timestamp.py
+[2026-11-22T04:51:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.7 files_done=100 resolved=7222 errors=0 current=tests/fast/arrow/test_arrow_pycapsule.py
+[2026-11-22T04:52:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.3 files_done=101 resolved=7261 errors=0 current=tests/fast/spark/test_spark_functions_null.py
+[2026-11-22T04:53:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.0 files_done=102 resolved=7307 errors=0 current=tests/fast/arrow/test_arrow_fetch.py
+[2026-11-22T04:53:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.6 files_done=103 resolved=7346 errors=0 current=tests/fast/test_versioning.py
+[2026-11-22T04:54:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.3 files_done=104 resolved=7406 errors=0 current=tests/fast/api/test_dbapi12.py
+[2026-11-22T04:55:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.8 files_done=106 resolved=7496 errors=0 current=duckdb/experimental/spark/sql/types.py
+[2026-11-22T04:57:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.8 files_done=107 resolved=7809 errors=0 current=tests/fast/api/test_connection_interrupt.py
+[2026-11-22T04:58:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.9 files_done=110 resolved=8050 errors=0 current=tests/fast/pandas/test_pandas_arrow.py
+[2026-11-22T04:59:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.5 files_done=112 resolved=8121 errors=0 current=duckdb/experimental/spark/sql/catalog.py
+[2026-11-22T05:01:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.2 files_done=117 resolved=8227 errors=0 current=tests/fast/spark/test_spark_to_parquet.py
+[2026-11-22T05:02:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.1 files_done=119 resolved=8316 errors=0 current=tests/fast/relational_api/test_rapi_functions.py
+[2026-11-22T05:03:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.6 files_done=123 resolved=8424 errors=0 current=tests/fast/test_union.py
+[2026-11-22T05:04:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.1 files_done=127 resolved=8474 errors=0 current=tests/slow/test_h2oai_arrow.py
+[2026-11-22T05:06:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.8 files_done=129 resolved=8676 errors=0 current=tests/fast/api/test_config.py
+[2026-11-22T05:07:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.3 files_done=130 resolved=8713 errors=0 current=tests/fast/spark/test_spark_functions_miscellaneous.py
+[2026-11-22T05:07:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.9 files_done=131 resolved=8750 errors=0 current=duckdb/experimental/spark/sql/readwriter.py
+[2026-11-22T05:08:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.6 files_done=132 resolved=8812 errors=0 current=tests/fast/pandas/test_date_as_datetime.py
+[2026-11-22T05:09:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.8 files_done=134 resolved=8964 errors=0 current=tests/fast/pandas/test_df_recursive_nested.py
+[2026-11-22T05:10:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.4 files_done=136 resolved=9005 errors=0 current=tests/fast/arrow/test_large_string.py
+[2026-11-22T05:11:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.0 files_done=140 resolved=9089 errors=0 current=tests/fast/arrow/test_time.py
+[2026-11-22T05:11:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.5 files_done=142 resolved=9163 errors=0 current=tests/fast/test_type_conversion.py
+[2026-11-22T05:12:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.2 files_done=143 resolved=9209 errors=0 current=tests/extensions/json/test_read_json.py
+[2026-11-22T05:13:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.0 files_done=145 resolved=9267 errors=0 current=tests/fast/spark/test_spark_transform.py
+[2026-11-22T05:13:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.7 files_done=147 resolved=9308 errors=0 current=tests/fast/spark/test_spark_to_csv.py
+[2026-11-22T05:14:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.3 files_done=150 resolved=9371 errors=0 current=tests/fast/spark/test_spark_drop_duplicates.py
+[2026-11-22T05:16:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.3 files_done=152 resolved=9512 errors=0 current=tests/fast/test_multi_statement.py
+[2026-11-22T05:17:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.0 files_done=155 resolved=9553 errors=0 current=tests/fast/pandas/test_stride.py
+[2026-11-22T05:17:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.7 files_done=160 resolved=9634 errors=0 current=tests/fast/test_json_logging.py
+[2026-11-22T05:18:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.7 files_done=163 resolved=9705 errors=0 current=tests/fast/arrow/test_projection_pushdown.py
+[2026-11-22T05:19:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.2 files_done=168 resolved=9738 errors=0 current=tests/fast/spark/test_spark_with_column_renamed.py
+[2026-11-22T05:19:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.8 files_done=169 resolved=9776 errors=0 current=tests/fast/spark/test_spark_filter.py
+[2026-11-22T05:20:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.4 files_done=170 resolved=9807 errors=0 current=tests/fast/arrow/test_interval.py
+[2026-11-22T05:21:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=119.8 files_done=174 resolved=9909 errors=0 current=tests/fast/arrow/test_tpch.py
+[2026-11-22T05:22:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.7 files_done=175 resolved=9987 errors=0 current=tests/fast/test_import_export.py
+[2026-11-22T05:23:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.5 files_done=178 resolved=10048 errors=0 current=tests/fast/adbc/test_connection_get_info.py
+[2026-11-22T05:24:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.2 files_done=181 resolved=10117 errors=0 current=tests/extensions/test_httpfs.py
+[2026-11-22T05:24:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.8 files_done=185 resolved=10190 errors=0 current=tests/fast/relational_api/test_joins.py
+[2026-11-22T05:25:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=123.7 files_done=188 resolved=10244 errors=0 current=tests/fast/spark/test_replace_empty_value.py
+[2026-11-22T05:26:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.3 files_done=189 resolved=10281 errors=0 current=tests/fast/types/test_datetime_date.py
+[2026-11-22T05:27:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.9 files_done=191 resolved=10336 errors=0 current=tests/fast/types/test_null.py
+[2026-11-22T05:27:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.6 files_done=194 resolved=10424 errors=0 current=tests/fast/spark/test_spark_catalog.py
+[2026-11-22T05:28:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.3 files_done=198 resolved=10484 errors=0 current=tests/fast/arrow/test_6584.py
+[2026-11-22T05:29:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.2 files_done=204 resolved=10541 errors=0 current=tests/fast/test_metatransaction.py
+[2026-11-22T05:30:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.0 files_done=210 resolved=10623 errors=0 current=duckdb_packaging/setuptools_scm_version.py
+[2026-11-22T05:30:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.6 files_done=214 resolved=10689 errors=0 current=tests/fast/arrow/test_9443.py
+[2026-11-22T05:31:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.4 files_done=218 resolved=10759 errors=0 current=tests/fast/test_relation_dependency_leak.py
+[2026-11-22T05:32:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.2 files_done=220 resolved=10836 errors=0 current=tests/fast/arrow/test_unregister.py
+[2026-11-22T05:32:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.9 files_done=222 resolved=10884 errors=0 current=tests/fast/api/test_dbapi13.py
+[2026-11-22T05:33:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.4 files_done=228 resolved=10929 errors=0 current=tests/fast/pandas/test_append_df.py
+[2026-11-22T05:33:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.9 files_done=230 resolved=10962 errors=0 current=duckdb/udf.py
+[2026-11-22T05:34:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.5 files_done=235 resolved=11007 errors=0 current=tests/fast/spark/test_spark_column.py
+[2026-11-22T05:35:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.1 files_done=240 resolved=11050 errors=0 current=tests/fast/test_type_explicit.py
+[2026-11-22T05:35:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.6 files_done=247 resolved=11130 errors=0 current=adbc_driver_duckdb/__init__.py
+[2026-11-22T05:36:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.1 files_done=253 resolved=11168 errors=0 current=tests/fast/types/test_geometry.py
+[2026-11-22T05:36:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.8 files_done=264 resolved=11236 errors=0 current=tests/fast/types/test_unsigned.py
+[2026-11-22T05:37:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.4 files_done=273 resolved=11271 errors=0 current=tests/fast/spark/test_spark_functions_dataframe.py
+[2026-11-22T05:37:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.9 files_done=288 resolved=11325 errors=0 current=duckdb/experimental/spark/sql/udf.py
+[2026-11-22T05:38:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.4 files_done=307 resolved=11367 errors=0 current=tests/spark_namespace/__init__.py
+[2026-11-22T05:42:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.0 files_done=311 resolved=11589 errors=0 current=src/duckdb_py/arrow/pyarrow_filter_pushdown.cpp
+[2026-11-22T05:43:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.6 files_done=313 resolved=11687 errors=0 current=src/duckdb_py/native/python_objects.cpp
+[2026-11-22T05:48:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.8 files_done=314 resolved=12015 errors=0 current=src/duckdb_py/pyrelation.cpp
+[2026-11-22T06:01:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=159.4 files_done=315 resolved=12807 errors=0 current=src/duckdb_py/common/exceptions.cpp
+[2026-11-22T06:02:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=160.3 files_done=317 resolved=12872 errors=0 current=src/duckdb_py/python_replacement_scan.cpp
+[2026-11-22T06:03:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=161.5 files_done=318 resolved=12947 errors=0 current=src/duckdb_py/pyexpression.cpp
+[2026-11-22T06:07:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=165.7 files_done=319 resolved=13206 errors=0 current=src/duckdb_py/pyconnection.cpp
+[2026-11-22T06:29:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=187.1 files_done=320 resolved=14558 errors=0 current=src/duckdb_py/pandas/scan.cpp
+[2026-11-22T06:30:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=188.3 files_done=321 resolved=14629 errors=0 current=src/duckdb_py/path_like.cpp
+[2026-11-22T06:37:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=195.2 files_done=324 resolved=15061 errors=0 current=src/duckdb_py/include/duckdb_python/python_objects.hpp
+[2026-11-22T06:38:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=196.3 files_done=326 resolved=15127 errors=0 current=src/duckdb_py/numpy/array_wrapper.cpp
+[2026-11-22T06:39:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=197.7 files_done=327 resolved=15210 errors=0 current=src/duckdb_py/jupyter/jupyter_progress_bar_display.cpp
+[2026-11-22T06:42:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=200.2 files_done=329 resolved=15366 errors=0 current=src/duckdb_py/typing/pytype.cpp
+[2026-11-22T06:44:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=202.2 files_done=330 resolved=15502 errors=0 current=src/duckdb_py/numpy/type.cpp
+[2026-11-22T06:45:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=203.0 files_done=333 resolved=15545 errors=0 current=src/duckdb_py/arrow/arrow_export_utils.cpp
+[2026-11-22T06:46:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=204.8 files_done=336 resolved=15655 errors=0 current=src/duckdb_py/pyconnection/type_creation.cpp
+[2026-11-22T06:47:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=205.3 files_done=337 resolved=15687 errors=0 current=src/duckdb_py/include/duckdb_python/pyconnection/pyconnection.hpp
+[2026-11-22T06:49:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=207.6 files_done=339 resolved=15833 errors=0 current=src/duckdb_py/include/duckdb_python/pybind11/conversions/null_handling_enum.hpp
+[2026-11-22T06:51:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=209.7 files_done=342 resolved=15960 errors=0 current=src/duckdb_py/map.cpp
+[2026-11-22T06:52:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=210.4 files_done=343 resolved=16007 errors=0 current=src/duckdb_py/pystatement.cpp
+[2026-11-22T06:53:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=211.0 files_done=346 resolved=16045 errors=0 current=src/duckdb_py/functional/functional.cpp
+[2026-11-22T06:53:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=211.6 files_done=351 resolved=16080 errors=0 current=src/duckdb_py/python_import_cache.cpp
+[2026-11-22T06:54:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=212.5 files_done=353 resolved=16136 errors=0 current=src/duckdb_py/include/duckdb_python/pyutil.hpp
+[2026-11-22T06:54:56Z] [iter=1] Target type resolved target_type=call_site resolved=16163 errors=0 secs=12698 mem_mb=942 MB
+[2026-11-22T06:54:56Z] [iter=1] Resolving target type target_type=import_statement count=1698
+[2026-11-22T06:55:05Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=213.0 files_done=356 resolved=801 errors=0 current=src/duckdb_py/numpy/raw_array_wrapper.cpp
+[2026-11-22T06:55:07Z] [iter=1] Target type resolved target_type=import_statement resolved=801 errors=0 secs=11 mem_mb=942 MB
+[2026-11-22T06:55:07Z] [iter=1] Resolving target type target_type=extends_clause count=243
+[2026-11-22T06:55:10Z] [iter=1] Target type resolved target_type=extends_clause resolved=243 errors=0 secs=4 mem_mb=942 MB
+[2026-11-22T08:29:13Z] [iter=1] Step 5: Writing final enrichment file triples=221497
+[2026-11-22T08:29:15Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/b54a49257c50e1a0fd9051f3e1ca7ce157aed4da.nq.gz size_kb=5302
+[2026-11-22T08:29:15Z] [iter=1] PHASE END: enrich elapsed_s=18432 elapsed_min=307.2 total_triples=221497

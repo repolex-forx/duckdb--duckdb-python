@@ -2144,6 +2144,118 @@
       ],
       "ast": [
         "aggregate/ast/b54a49257c50e1a0fd9051f3e1ca7ce157aed4da/chunk-001.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/b54a49257c50e1a0fd9051f3e1ca7ce157aed4da.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "ipython",
+          "ecosystem": "PYPI",
+          "version": "9.18.1",
+          "githubOrg": "ipython",
+          "githubRepo": "ipython",
+          "githubCommit": "5aa346b9f25910cc4888f44ac58b7aaa4b59da9c",
+          "githubTag": "9.18.1",
+          "githubUrl": "https://github.com/ipython/ipython",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "fsspec",
+          "ecosystem": "PYPI",
+          "version": "2026.9.0",
+          "githubOrg": "fsspec",
+          "githubRepo": "filesystem_spec",
+          "githubCommit": "0f76baaae4a227b085b18e8469e6cc1792a95ade",
+          "githubTag": "2026.9.0",
+          "githubUrl": "https://github.com/fsspec/filesystem_spec",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "numpy",
+          "ecosystem": "PYPI",
+          "version": "2.5.5",
+          "githubOrg": "numpy",
+          "githubRepo": "numpy",
+          "githubCommit": "afcbc6d21a88a7b59c5bfe115198e24ed51b3dae",
+          "githubTag": "v2.5.5",
+          "githubUrl": "https://github.com/numpy/numpy",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "pandas",
+          "ecosystem": "PYPI",
+          "version": "3.1.1",
+          "githubOrg": "pandas-dev",
+          "githubRepo": "pandas",
+          "githubCommit": "3dcc6fbbbebc5e85dd3e83fe49b382ca7735cae1",
+          "githubTag": "v3.1.1",
+          "githubUrl": "https://github.com/pandas-dev/pandas",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "pyarrow",
+          "ecosystem": "PYPI",
+          "version": "26.0.1",
+          "githubOrg": "apache",
+          "githubRepo": "arrow",
+          "githubUrl": "https://github.com/apache/arrow",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "adbc-driver-manager",
+          "ecosystem": "PYPI",
+          "version": "1.13.0",
+          "githubOrg": "apache",
+          "githubRepo": "arrow-adbc",
+          "githubUrl": "https://github.com/apache/arrow-adbc",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "packaging",
+          "ecosystem": "PYPI",
+          "version": "26.3.0",
+          "githubOrg": "pypa",
+          "githubRepo": "packaging",
+          "githubUrl": "https://github.com/pypa/packaging",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.13/site-packages/packaging/version.py"
+        },
+        {
+          "packageName": "requests",
+          "ecosystem": "PYPI",
+          "version": "2.34.2",
+          "githubOrg": "psf",
+          "githubRepo": "requests",
+          "githubCommit": "6e83187b8feb273ed4c6cdab5efd8d54901dfab3",
+          "githubTag": "v2.34.2",
+          "githubUrl": "https://github.com/psf/requests",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.13/site-packages/requests/sessions.py"
+        },
+        {
+          "packageName": "urllib3",
+          "ecosystem": "PYPI",
+          "version": "2.8.0",
+          "githubOrg": "urllib3",
+          "githubRepo": "urllib3",
+          "githubCommit": "b1d30ab61fe0db8f11092805e8c5ac43e091064a",
+          "githubTag": "2.8.0",
+          "githubUrl": "https://github.com/urllib3/urllib3",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.13/site-packages/urllib3/util/retry.py"
+        },
+        {
+          "packageName": "typing-extensions",
+          "ecosystem": "PYPI",
+          "version": "4.16.0",
+          "githubOrg": "python",
+          "githubRepo": "typing_extensions",
+          "githubCommit": "f29cd28d8ed7642cafb1d18daf5aa41be6a5c0aa",
+          "githubTag": "4.16.0",
+          "githubUrl": "https://github.com/python/typing_extensions",
+          "source": "lsp",
+          "raw_name": "typing_extensions.py",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.13/site-packages/typing_extensions.py"
+        }
       ]
     }
   ],
