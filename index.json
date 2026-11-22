@@ -3,6 +3,16 @@
   "repo": "duckdb-python",
   "versions": [
     {
+      "commit": "b54a49257c50e1a0fd9051f3e1ca7ce157aed4da",
+      "tag": "v1.5.1",
+      "parsed_at": "2026-11-22T08:32:07.655118+00:00"
+    },
+    {
+      "commit": "2aea44eeae35b9c77dc2ff672634034a75c9bb16",
+      "tag": "v1.5.2",
+      "parsed_at": "2026-11-21T23:50:54.764712+00:00"
+    },
+    {
       "commit": "6d67c23ddb01f54c30aade3ac1bd11ae4cf90703",
       "tag": "",
       "parsed_at": "2026-10-17T00:33:13.565894+00:00"
